@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bluedark: #01295a;
+  --textclr: #777;
+  --green: #039123;
+  --black: rgba(48, 48, 48, 1);
+}
+
+body {
+  color: var(--black);
+}
+
+.btn-readmore {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--bluedark);
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.btn-readmore .arrow-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 20px;
+  color: var(--green);
+}
+
+.slider-dots span {
+  width: 5.5px;
+  height: 5.5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  display: inline-block;
+}
+
+.slider-dots span.active {
+  background: var(--green);
+}
+
+.line-clamp-1 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
